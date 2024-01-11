@@ -1,0 +1,36 @@
+{
+  "name": "steveb-p/glowing-octo-broccoli",
+  "license": "proprietary",
+  "type": "ibexa-bundle",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ibexa/admin-ui": "~4.6.x-dev",
+    "ibexa/core": "~4.6.x-dev",
+    "ibexa/rest": "~4.6.x-dev",
+    "symfony/config": "^5.4",
+    "symfony/dependency-injection": "^5.4",
+    "symfony/event-dispatcher-contracts": "^2.2",
+    "symfony/http-foundation": "^5.4",
+    "symfony/http-kernel": "^5.4",
+    "symfony/yaml": "^5.4"
+  },
+  "require-dev": {
+    "symfony/event-dispatcher": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\GlowingOctoBroccoli\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\GlowingOctoBroccoli\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": false,
+    "sort-packages": true
+  }
+}
