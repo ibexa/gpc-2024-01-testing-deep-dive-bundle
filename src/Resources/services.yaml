@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        public: false
+
+    Ibexa\Gpc202401TestingDeepDiveBundle\Controller\QuotaRequestsController:
+        autowire: true
+        autoconfigure: true
+
+    Ibexa\Gpc202401TestingDeepDiveBundle\DataSource\QuotaRequestDataSource:
+        arguments:
+            $permissionResolver: '@Ibexa\Contracts\Core\Repository\PermissionResolver'
+
+    Ibexa\Gpc202401TestingDeepDiveBundle\DataSource\QuotaRequestDataSourceInterface:
+        alias: Ibexa\Gpc202401TestingDeepDiveBundle\DataSource\QuotaRequestDataSource
+
+    Ibexa\Gpc202401TestingDeepDiveBundle\EventSubscriber\QuotaRequestMenuEventSubscriber:
+        autowire: true
+        tags:
+            - kernel.event_subscriber

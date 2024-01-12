@@ -1,0 +1,4 @@
+Ibexa.quota_request.quota_request_list:
+    path: /quota-requests
+    methods: [GET]
+    controller: 'Ibexa\Gpc202401TestingDeepDiveBundle\Controller\QuotaRequestsController'
